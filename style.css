@@ -1,11 +1,12 @@
+
 :root{
-  --bg:#f3f5f9;
+  --bg:#f5f7fb;
   --card:#ffffff;
-  --text:#1f2937;
-  --sub:#667085;
-  --line:#e5e7eb;
-  --accent:#2563eb;
-  --accent2:#1d4ed8;
+  --text:#1f2a44;
+  --sub:#5b6780;
+  --line:#dfe5f0;
+  --accent:#2f5bea;
+  --accent2:#2146c7;
 }
 
 *{
@@ -32,20 +33,21 @@ a:hover{
 header{
   background:linear-gradient(135deg,var(--accent2),var(--accent));
   color:white;
-  padding:28px 18px 24px;
+  padding:34px 20px 28px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
 header h1{
   margin:0;
-  font-size:32px;
-  line-height:1.25;
+  font-size:34px;
+  line-height:1.2;
   font-weight:800;
 }
 
 header p{
-  margin:10px 0 0;
+  margin:12px 0 0;
   font-size:15px;
-  opacity:0.95;
+  opacity:0.96;
 }
 
 nav{
@@ -82,9 +84,11 @@ section{
 }
 
 h2{
-  margin:0 0 14px;
+  margin:0 0 18px;
   font-size:24px;
   line-height:1.35;
+  padding-left:12px;
+  border-left:5px solid var(--accent);
 }
 
 .note{
@@ -96,17 +100,18 @@ h2{
 .card{
   display:block;
   background:var(--card);
-  border:1px solid var(--line);
+  border:1px solid #e3e8f5;
   border-radius:16px;
-  padding:16px;
-  margin:12px 0;
-  box-shadow:0 6px 18px rgba(15, 23, 42, 0.05);
-  transition:transform .15s ease, box-shadow .15s ease;
+  padding:18px;
+  margin:14px 0;
+  box-shadow:0 4px 12px rgba(15, 23, 42, 0.05);
+  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 
 .card:hover{
-  transform:translateY(-1px);
+  transform:translateY(-2px);
   box-shadow:0 10px 24px rgba(15, 23, 42, 0.08);
+  border-color:#cdd8f6;
 }
 
 .card-title{
@@ -114,7 +119,7 @@ h2{
   font-size:20px;
   font-weight:800;
   line-height:1.4;
-  color:var(--text);
+  color:#16233b;
 }
 
 .card-title:hover{
@@ -137,19 +142,19 @@ h2{
 
 @media (min-width: 768px){
   header{
-    padding:42px 24px 34px;
+    padding:46px 24px 36px;
   }
 
   header h1{
-    font-size:44px;
+    font-size:46px;
   }
 
   header p{
-    font-size:17px;
+    font-size:18px;
   }
 
   .container{
-    padding:32px 20px 56px;
+    padding:36px 20px 60px;
   }
 
   h2{
@@ -157,7 +162,7 @@ h2{
   }
 
   .card{
-    padding:20px;
+    padding:22px;
   }
 
   .card-title{
@@ -166,6 +171,6 @@ h2{
 
   .desc,
   .note{
-    font-size:15px;
+    font-size:16px;
   }
 }
