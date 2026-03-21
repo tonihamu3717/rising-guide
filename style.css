@@ -5,8 +5,11 @@
   --text:#1f2a44;
   --sub:#5b6780;
   --line:#dfe5f0;
+
+  /* デフォルト色（日ハム寄りの青にしてもいいし汎用でもOK） */
   --accent:#0f7fc4;
   --accent2:#0a5fa0;
+  --team-text:#ffffff;
 }
 
 *{
@@ -32,7 +35,7 @@ a:hover{
 
 header{
   background:linear-gradient(135deg,var(--accent2),var(--accent));
-  color:white;
+  color:var(--team-text);
   padding:34px 20px 28px;
   box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
@@ -70,7 +73,7 @@ nav{
 nav a{
   font-size:14px;
   font-weight:700;
-  color:#0a5fa0;
+  color:var(--accent2);
 }
 
 .container{
@@ -101,6 +104,7 @@ h2{
   display:block;
   background:var(--card);
   border:1px solid #e3e8f5;
+  border-left:6px solid var(--accent);
   border-radius:16px;
   padding:18px;
   margin:14px 0;
@@ -138,6 +142,98 @@ h2{
   margin:20px 16px 0;
   font-size:14px;
   font-weight:700;
+}
+
+/* ===== 球団ごとの色 ===== */
+
+/* ソフトバンク */
+body.team-hawks{
+  --accent:#f7c600;
+  --accent2:#d4a800;
+  --team-text:#111111;
+}
+
+/* 日ハム */
+body.team-fighters{
+  --accent:#005bac;
+  --accent2:#003f7d;
+  --team-text:#ffffff;
+}
+
+/* 巨人 */
+body.team-giants{
+  --accent:#ff6b00;
+  --accent2:#d85a00;
+  --team-text:#ffffff;
+}
+
+/* 阪神 */
+body.team-tigers{
+  --accent:#ffe100;
+  --accent2:#d1b800;
+  --team-text:#111111;
+}
+
+/* DeNA */
+body.team-baystars{
+  --accent:#0052a4;
+  --accent2:#003f7f;
+  --team-text:#ffffff;
+}
+
+/* 広島 */
+body.team-carp{
+  --accent:#c41e3a;
+  --accent2:#99172d;
+  --team-text:#ffffff;
+}
+
+/* 中日 */
+body.team-dragons{
+  --accent:#0054a6;
+  --accent2:#003f7d;
+  --team-text:#ffffff;
+}
+
+/* ヤクルト */
+body.team-swallows{
+  --accent:#1e3a8a;
+  --accent2:#162c69;
+  --team-text:#ffffff;
+}
+
+/* 西武 */
+body.team-lions{
+  --accent:#005bac;
+  --accent2:#004080;
+  --team-text:#ffffff;
+}
+
+/* ロッテ */
+body.team-marines{
+  --accent:#222222;
+  --accent2:#111111;
+  --team-text:#ffffff;
+}
+
+/* オリックス */
+body.team-buffaloes{
+  --accent:#9c7a2b;
+  --accent2:#745a1f;
+  --team-text:#ffffff;
+}
+
+/* 楽天 */
+body.team-eagles{
+  --accent:#8b0000;
+  --accent2:#650000;
+  --team-text:#ffffff;
+}
+
+/* ちょい微調整 */
+body.team-hawks .card-title,
+body.team-tigers .card-title{
+  color:#16233b;
 }
 
 @media (min-width: 768px){
